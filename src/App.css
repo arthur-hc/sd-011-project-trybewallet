@@ -1,41 +1,124 @@
 .App {
   text-align: center;
+  background-color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.table {
+  display: table;
+  margin: auto;
+  width: 197vh;
 }
 
-@media ( prefers-reduced-motion : no-preference ) {
-
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.line {
+  display: table-row;
 }
 
-.App-header {
+.column {
+  display: table-cell;
+  height: 40px;
+  text-align: center;
+  width: 40px;
+}
+
+input {
+  text-align: center;
+  border-radius: 12%;
+  margin-left: 3px;
+}
+
+select {
+  margin-left: 3px;
+}
+
+.bg-login {
+  width: 198h;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  background-color: #282c34;
-  color: white;
+}
+
+.form-login {
   display: flex;
   flex-direction: column;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  border: solid 1px white;
+  padding: 35px;
+  border-radius: 10%;
+}
+
+.title-login {
+  color: rgb(179, 137, 0)
+}
+
+.bt-entrar {
+  margin-top: 5px;
+  background-image: linear-gradient( rgb(19, 19, 19), rgb(0, 0, 0));
+  color: rgb(179, 137, 0);
+  font-weight: 600;
+  width: 80px;
+  height: 30px;
+}
+
+header {
+  background-image: linear-gradient( rgb(29, 29, 29), rgb(0, 0, 0));
+  height: 12vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  border-bottom: 2px solid rgb(179, 137, 0);
+}
+
+.total-header {
+  display: flex;
   justify-content: center;
-  min-height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.currency-header {
+  margin-left: 5px;
+  color: rgb(255, 196, 0);
 }
 
-@keyframes App-logo-spin {
+.form-expenses {
+  display: flex;
+  justify-content:space-evenly;
+  height: 40px;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  padding-top: 5px;
+  background-image: linear-gradient( rgb(39, 39, 39), rgb(17, 17, 17));
+}
 
-  from {
-    transform: rotate(0deg);
-  }
+.bt-exp {
+  color: rgb(255, 196, 0);
+  font-weight: 600;
+  margin-bottom: 1px;
+  background-image: linear-gradient( rgb(59, 59, 59), rgb(0, 0, 0));
+  border: 1px solid rgb(54, 52, 52);
+}
 
-  to {
-    transform: rotate(360deg);
-  }
+thead {
+  font-size: 14px;
+  color: rgb(255, 196, 0);
+  /* color: white; */
+  background-image: linear-gradient( rgb(39, 39, 39), rgb(17, 17, 17));
+}
+
+th {
+  font-weight: 500;
+}
+
+.line-expense {
+  color: white;
+  background-color: rgb(15, 15, 15);
+}
+
+.bt-del-edit {
+  background-color: transparent;
+  border: 1px solid rgb(34, 34, 34);
+  margin: 3px;
 }
